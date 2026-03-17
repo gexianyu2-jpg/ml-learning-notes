@@ -1,55 +1,30 @@
 # ML Learning Notes
 
-## Learning Goal（英文）
-- Understand machine learning fundamentals
-- Explore medical imaging applications
+## 1. Machine Learning Basics
+（李宏毅）
 
 ---
 
-## 1. Machine Learning Basics（英文标题）
+## 2. 从Foundation model for cancer imaging biomarkers学习影像基础模型与自监督预训练的系统范式与评估框架
 
-机器学习的核心可以理解为：
-- 模型（Model）
-- 损失函数（Loss）
-- 优化（Optimization）
-
-其目标是学习一个从输入到输出的映射函数。
 
 ---
 
-## 2. Medical AI Pipeline（英文标题）
+## 3.2.从AI-based large-scale screening of gastric cancer from noncontrast CT imaging学会从0完成模型的建模到评估
 
-通过阅读相关论文，我总结医学AI的基本流程为：
-
-1. 数据：
-- CT影像（通常为3D）
-- 数据分布不均衡
-
-2. 任务：
-- 分类（如癌症检测）
-- 报告生成
-
-3. 模型：
-- CNN / Transformer
-- 多模态模型（VLM）
-
-4. 评价：
-- 常用AUC指标
 
 ---
 
-## 3. Paper Insights（英文标题）
+## 4.从LLaVA-Med: Training a Large Language and Vision Assistant for Biomedicine in One Day和Towards a holistic framework for multimodal LLM in 3D brain CT radiology report generation学会根据从私有数据出发，构建一个可以用于大模型训练的数据集
 
-### AI-based gastric cancer screening
 
-这篇论文主要完成了：
-- 基于CT影像进行癌症筛查
-- 使用AUC作为主要评价指标
 
 ---
 
-## 4. Thoughts（英文标题）
+## 5. 从A generalist vision–language foundation model for diverse biomedical tasks学会通用医学 VLM 的开源轻量方案与跨任务评测
 
-- 我发现AUC在医学任务中非常重要
-- 医学影像问题本质上可以转化为机器学习问题
-- 对多模态模型（图像+文本）比较感兴趣
+
+
+---
+
+## 6. Thoughts
