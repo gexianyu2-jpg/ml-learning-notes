@@ -1,5 +1,3 @@
-# ml-learning-notes
-My notes on machine learning and medical imaging
 # ML Learning Notes
 
 ## Learning Goal
@@ -8,31 +6,67 @@ My notes on machine learning and medical imaging
 
 ---
 
-## Lecture Notes
+## 1. Machine Learning Basics
 
-### Lecture 1: Introduction to Machine Learning
-- Machine learning = model + loss function + optimization
-- Supervised vs Unsupervised learning
+### What is Machine Learning
+Machine learning aims to learn a function that maps input to output.
 
----
-
-### Lecture 2: Regression and Classification
-- Regression: predict continuous values
-- Classification: predict discrete labels
-- Overfitting problem
+Core components:
+- Model
+- Loss function
+- Optimization
 
 ---
 
-## Connection to Medical Imaging
-
-- CT cancer detection → binary classification problem
-- Data is highly imbalanced → AUC is important
-- Model needs to handle 3D data
+### Tasks
+- Classification (e.g., cancer detection)
+- Regression
 
 ---
 
-## Thoughts
+## 2. Medical AI Pipeline
 
-- I find evaluation metrics (like AUC) very important in medical tasks
-- I am still confused about how foundation models work on 3D CT data
-- I want to further learn PyTorch and deep learning
+From reading the papers, I summarize:
+
+1. Data:
+- CT images (3D)
+- Imbalanced dataset
+
+2. Task:
+- Classification
+- Report generation
+
+3. Model:
+- CNN / Transformer
+- Vision-Language Models (VLM)
+
+4. Evaluation:
+- AUC is commonly used
+
+---
+
+## 3. Paper Insights
+
+### AI-based gastric cancer screening (Nat Med 2025)
+- Task: classification
+- Data: CT images
+- Metric: AUC
+
+### LLaVA-Med
+- Multimodal model (image + text)
+- Used for biomedical tasks
+
+---
+
+## 4. Thoughts
+
+- I find AUC important because medical data is imbalanced
+- Medical imaging tasks can be framed as ML problems
+- I am interested in combining ML with biology
+
+---
+
+## 5. Next Steps
+
+- Learn PyTorch
+- Understand deep learning models
