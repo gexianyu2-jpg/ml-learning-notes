@@ -1,72 +1,55 @@
 # ML Learning Notes
 
-## Learning Goal
-- Understand machine learning fundamentals (based on Li Hongyi's course)
-- Explore applications in medical imaging
+## Learning Goal（英文）
+- Understand machine learning fundamentals
+- Explore medical imaging applications
 
 ---
 
-## 1. Machine Learning Basics
+## 1. Machine Learning Basics（英文标题）
 
-### What is Machine Learning
-Machine learning aims to learn a function that maps input to output.
+机器学习的核心可以理解为：
+- 模型（Model）
+- 损失函数（Loss）
+- 优化（Optimization）
 
-Core components:
-- Model
-- Loss function
-- Optimization
-
----
-
-### Tasks
-- Classification (e.g., cancer detection)
-- Regression
+其目标是学习一个从输入到输出的映射函数。
 
 ---
 
-## 2. Medical AI Pipeline
+## 2. Medical AI Pipeline（英文标题）
 
-From reading the papers, I summarize:
+通过阅读相关论文，我总结医学AI的基本流程为：
 
-1. Data:
-- CT images (3D)
-- Imbalanced dataset
+1. 数据：
+- CT影像（通常为3D）
+- 数据分布不均衡
 
-2. Task:
-- Classification
-- Report generation
+2. 任务：
+- 分类（如癌症检测）
+- 报告生成
 
-3. Model:
+3. 模型：
 - CNN / Transformer
-- Vision-Language Models (VLM)
+- 多模态模型（VLM）
 
-4. Evaluation:
-- AUC is commonly used
-
----
-
-## 3. Paper Insights
-
-### AI-based gastric cancer screening (Nat Med 2025)
-- Task: classification
-- Data: CT images
-- Metric: AUC
-
-### LLaVA-Med
-- Multimodal model (image + text)
-- Used for biomedical tasks
+4. 评价：
+- 常用AUC指标
 
 ---
 
-## 4. Thoughts
+## 3. Paper Insights（英文标题）
 
-- I find AUC important because medical data is imbalanced
-- Medical imaging tasks can be framed as ML problems
-- I am interested in combining ML with biology
+### AI-based gastric cancer screening
+
+这篇论文主要完成了：
+- 基于CT影像进行癌症筛查
+- 使用AUC作为主要评价指标
 
 ---
 
-## 5. Next Steps
+## 4. Thoughts（英文标题）
 
-- Learn PyTorch
-- Understand deep learning models
+- 我发现AUC在医学任务中非常重要
+- 医学影像问题本质上可以转化为机器学习问题
+- 对多模态模型（图像+文本）比较感兴趣
