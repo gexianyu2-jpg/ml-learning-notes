@@ -2,15 +2,32 @@
 
 ## 1. Machine Learning Basics
 （李宏毅）
-机器学习旨在学习一个从输入到输出的函数。
+机器学习旨在学习一个从输入到输出的函数。ML = Model + Loss + Optimization
 
-regression(回归):预测连续值
+eg:
 
-classification(分类)：预测离散类别
+1. Model
 
-structured learning(结构化学习)：预测具有内部结构的输出
+y = b + c^T σ(b + W x)
 
-model（模型）:具有未知参数的函数
+- x: feature（输入变量）
+- y: prediction
+- W, b, c: parameters（参数）
+- σ: activation，这里是sigmoid function
+
+2. Loss
+
+L(y, ŷ)
+
+衡量预测与真实值的差距
+
+3. Optimization
+
+调整参数，使 loss 最小
+
+ Gradient Descent
+
+部分名词解释：regression(回归):预测连续值 classification(分类)：预测离散类别 structured learning(结构化学习)：预测具有内部结构的输出 model（模型）:具有未知参数的函数
 ## 2. 从Foundation model for cancer imaging biomarkers学习影像基础模型与自监督预训练的系统范式与评估框架
 
 
