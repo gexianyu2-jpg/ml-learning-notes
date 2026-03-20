@@ -14,6 +14,7 @@ y = b + c^T σ(b + W x)
 - y: prediction
 - W, b, c: parameters（参数）
 - σ: activation，这里是sigmoid function
+- 单一线性模型表达能力有限（高bias），引入非线性激活函数（如 sigmoid），通过多层或多单元组合，可以逼近任意连续函数。
 
 2. Loss
 
