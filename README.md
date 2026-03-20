@@ -10,7 +10,7 @@ eg:
 
 ```text
 y = b + c^T σ(b + W x)
-
+```
 - x: feature（输入变量）
 - y: prediction
 - W, b, c: parameters（参数）
