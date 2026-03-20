@@ -8,7 +8,8 @@ eg:
 
 1. Model
 
-```texty = b + c^T σ(b + W x)
+```text
+y = b + c^T σ(b + W x)
 
 - x: feature（输入变量）
 - y: prediction
