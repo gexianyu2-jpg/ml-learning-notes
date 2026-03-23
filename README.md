@@ -75,21 +75,21 @@ hyperparameter:batch size 同时影响：
 -large batch：接近全数据 → 梯度更接近真实梯度
 
 3. 优化路径（optimization）
--small batch 的噪声：
--→ 提供“随机扰动”
--→ 帮助跳出 saddle point / sharp minima
--→better
--large batch：
--→ 梯度太精确
--→ 容易卡在局部结构
--→worse
+- small batch 的噪声：
+- → 提供“随机扰动”
+- → 帮助跳出 saddle point / sharp minima
+- →better
+- large batch：
+- → 梯度太精确
+- → 容易卡在局部结构
+- →worse
 
 4. 泛化能力（generalization）
--small batch → noisy gradient
--→ 不容易陷入 sharp minima
--→ 更容易找到 flat minima
--→ 对参数扰动更robust
--→ 泛化更好
+- small batch → noisy gradient
+- → 不容易陷入 sharp minima
+- → 更容易找到 flat minima
+- → 对参数扰动更robust
+- → 泛化更好
 ## 2. 从Foundation model for cancer imaging biomarkers学习影像基础模型与自监督预训练的系统范式与评估框架
 
 
