@@ -59,38 +59,37 @@ N-fold Cross Validation:评估模型的泛化能力，减少单次划分带来�
 hyperparameter:batch size 同时影响：
 
 1. 计算效率（time）
- 单次 update：
-    small batch → 更快（无并行）
-    large batch → 更慢
+- 单次 update：
+-   small batch → 更快（无并行）
+-    large batch → 更慢
 
-有 GPU 并行：
-    small ≈ large（甚至 large 更高效）
+-有 GPU 并行：
+-    small ≈ large（甚至 large 更高效）
 
-每个 epoch：
-    small → 慢
-    large → 快 
+-每个 epoch：
+-    small → 慢
+-    large → 快 
 
 2. 梯度性质（gradient）
-small batch：只用部分数据 → 梯度是估计值 → 有随机误差
-
-large batch：接近全数据 → 梯度更接近真实梯度
+-small batch：只用部分数据 → 梯度是估计值 → 有随机误差
+-large batch：接近全数据 → 梯度更接近真实梯度
 
 3. 优化路径（optimization）
-small batch 的噪声：
-→ 提供“随机扰动”
-→ 帮助跳出 saddle point / sharp minima
-→better
-large batch：
-→ 梯度太精确
-→ 容易卡在局部结构
-→worse
+-small batch 的噪声：
+-→ 提供“随机扰动”
+-→ 帮助跳出 saddle point / sharp minima
+-→better
+-large batch：
+-→ 梯度太精确
+-→ 容易卡在局部结构
+-→worse
 
 4. 泛化能力（generalization）
-small batch → noisy gradient
-→ 不容易陷入 sharp minima
-→ 更容易找到 flat minima
-→ 对参数扰动更robust
-→ 泛化更好
+-small batch → noisy gradient
+-→ 不容易陷入 sharp minima
+-→ 更容易找到 flat minima
+-→ 对参数扰动更robust
+-→ 泛化更好
 ## 2. 从Foundation model for cancer imaging biomarkers学习影像基础模型与自监督预训练的系统范式与评估框架
 
 
