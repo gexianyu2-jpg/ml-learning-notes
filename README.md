@@ -71,8 +71,8 @@ hyperparameter:batch size 同时影响：
 -    large → 快 
 
 2. 梯度性质（gradient）
--small batch：只用部分数据 → 梯度是估计值 → 有随机误差
--large batch：接近全数据 → 梯度更接近真实梯度
+- small batch：只用部分数据 → 梯度是估计值 → 有随机误差
+- large batch：接近全数据 → 梯度更接近真实梯度
 
 3. 优化路径（optimization）
 - small batch 的噪声：
