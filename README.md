@@ -48,11 +48,44 @@ Critical point 分类依赖于 Hessian：
 
 高维中：
 - saddle point ≫ local minimum
+
 4.evaluation
 N-fold Cross Validation:评估模型的泛化能力，减少单次划分带来的随机性.
 
 
 部分名词解释：regression(回归):预测连续值  classification(分类)：预测离散类别  structured learning(结构化学习)：预测具有内部结构的输出  model（模型）:具有未知参数的函数  Deep Learning（深度学习） = 多层非线性函数的嵌套，用层级结构表达复杂模式
+
+hyperparameter:batch size 同时影响：
+1. 计算效率（time）
+ 单次 update：
+    small batch → 更快（无并行）
+    large batch → 更慢
+
+有 GPU 并行：
+    small ≈ large（甚至 large 更高效）
+
+每个 epoch：
+    small → 慢
+    large → 快 
+2. 梯度性质（gradient）
+small batch：只用部分数据 → 梯度是估计值 → 有随机误差
+
+large batch：接近全数据 → 梯度更接近真实梯度
+4. 优化路径（optimization）
+small batch 的噪声：
+→ 提供“随机扰动”
+→ 帮助跳出 saddle point / sharp minima
+→better
+large batch：
+→ 梯度太精确
+→ 容易卡在局部结构
+→worse
+5. 泛化能力（generalization）
+small batch → noisy gradient
+→ 不容易陷入 sharp minima
+→ 更容易找到 flat minima
+→ 对参数扰动更robust
+→ 泛化更好
 ## 2. 从Foundation model for cancer imaging biomarkers学习影像基础模型与自监督预训练的系统范式与评估框架
 
 
