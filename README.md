@@ -54,7 +54,13 @@ Critical point 分类依赖于 Hessian：
 N-fold Cross Validation:评估模型的泛化能力，减少单次划分带来的随机性.
 
 
-部分名词解释：regression(回归):预测连续值  classification(分类)：预测离散类别  structured learning(结构化学习)：预测具有内部结构的输出  model（模型）:具有未知参数的函数  Deep Learning（深度学习） = 多层非线性函数的嵌套，用层级结构表达复杂模式
+部分名词解释：
+
+- regression(回归):预测连续值
+- classification(分类)：预测离散类别
+- structured learning(结构化学习)：预测具有内部结构的输出
+- model（模型）:具有未知参数的函数
+- Deep Learning（深度学习） = 多层非线性函数的嵌套，用层级结构表达复杂模式
 
 hyperparameter:batch size 同时影响：
 
