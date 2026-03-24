@@ -49,6 +49,23 @@ Critical point 分类依赖于 Hessian：
 高维中：
 - saddle point ≫ local minimum
 
+Momentum
+
+Core Idea
+利用历史梯度累积，加速收敛
+
+Update Rule
+- v ← βv - η∇L  
+- θ ← θ + v
+
+Effects
+- 加速收敛
+- 减少震荡
+- 平滑噪声
+
+Insight
+> Momentum = 梯度的指数加权平均
+
 4.evaluation
 
 N-fold Cross Validation:评估模型的泛化能力，减少单次划分带来的随机性.
