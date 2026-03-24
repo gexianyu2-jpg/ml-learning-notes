@@ -52,7 +52,7 @@ Critical point 分类依赖于 Hessian：
 Momentum
 
 Core Idea
-利用历史梯度累积，加速收敛
+- 利用历史梯度累积，加速收敛
 
 Update Rule
 - v ← βv - η∇L  
@@ -66,6 +66,26 @@ Effects
 Insight
 > Momentum = 梯度的指数加权平均
 
+adaptive methods(自适应学习率)
+- RMSProp
+
+- v ← βv + (1-β)(∇L)^2
+-  θ ← θ - η * ∇L / sqrt(v)
+-  β ∈ (0, 1)，通常取 0.9 / 0.99 / 0.999
+-  β：动量/指数平均系数（constant）
+
+RMS（simple average）：
+- 对所有历史梯度平方做平均
+→ 权重相同
+→ 无法适应动态变化
+
+RMSProp（EMA）：
+- 对梯度平方做指数加权平均
+→ 新数据权重大
+→ 旧数据逐渐遗忘
+→ 更适合训练过程中的非平稳变化
+
+- Adam
 4.evaluation
 
 N-fold Cross Validation:评估模型的泛化能力，减少单次划分带来的随机性.
