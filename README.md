@@ -30,6 +30,13 @@ Update：基于一个 batch 进行一次参数更新
 关系：
 1 epoch = (dataset size / batch size) 次 update
 
+classification loss
+- Softmax：将模型输出（logits）转换为概率分布
+- Cross-Entropy：衡量预测概率与真实分布之间的差异
+
+Softmax + Cross-Entropy：
+用于分类任务，本质是最大化正确类别的概率（Maximum Likelihood Estimation最大似然估计）
+
 #3. Optimization
 
 调整参数，使 loss 最小
