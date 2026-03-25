@@ -137,14 +137,14 @@ N-fold Cross Validation:评估模型的泛化能力，减少单次划分带来�
 hyperparameter:batch size 同时影响：
 
 1. 计算效率（time）
-- 单次 update：
+ 单次 update：
 -   small batch → 更快（无并行）
 -    large batch → 更慢
 
--有 GPU 并行：
+有 GPU 并行：
 -    small ≈ large（甚至 large 更高效）
 
--每个 epoch：
+每个 epoch：
 -    small → 慢
 -    large → 快 
 
