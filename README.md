@@ -85,7 +85,36 @@ RMSProp（EMA）：
 → 旧数据逐渐遗忘
 → 更适合训练过程中的非平稳变化
 
-- Adam
+- Adam=Momentum + RMSProp
+
+ learning rate scheduling
+
+Core Idea:动态调整学习率 η
+
+1. Warm-up
+- 初期小 learning rate
+- 逐渐增大
+
+作用：
+- 防止训练初期不稳定
+- 避免梯度爆炸
+
+2. Learning Rate Decay
+- 后期减小 learning rate
+
+作用：
+- 减少震荡
+- 提高收敛精度
+
+---
+
+Insight
+训练过程分为：
+- Early（稳定）
+- Mid（快速学习）
+- Late（精细收敛）
+
+LR scheduling 控制整个优化节奏
 
 4.evaluation
 
